@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--<%@taglib prefix="form" uri="http://www.springframework.org/tags/form" %>-->
 <%@ taglib prefix=“form” uri=“http://www.springframework.org/tags/form”%>
-<html lang="en" xmlns:form="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -10,7 +10,7 @@
 <body>
 <br>
 
-<form action="/getMagazynier" method="GET" modelAttribute="magaziu" style="color:blue">
+<form action="getMagazynier" method="POST" modelAttribute="magaziu" style="color:blue">
     <table border=2>
                <tr>
             <td>nazwisko</td>
@@ -25,7 +25,16 @@
             </td>
         </tr>
     </table>
-    <input type="submit" value="zapisz"/>
+    <input type="submit" value="zapisz" action="onClick()"/>
+</form>
+</body>
+</html>
+
+
+
+
+
+
 
 
     <!-- <p>Nazwisko magazyniera <input type="text" name="magazynierzy_nazwisko" style="color:green"/></p>
@@ -40,6 +49,4 @@
          <button type="button" class="btn btn-primary">Wyświetl magazynierów</button>
      </a>-->
 
-</form>
-</body>
-</html>
+

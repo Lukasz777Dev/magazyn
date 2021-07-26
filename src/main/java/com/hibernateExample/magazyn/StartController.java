@@ -70,14 +70,17 @@ public Magazynierzy ma;*/
 
     private Map<Integer, Magazynierzy> magMap = new HashMap<>();
 
+   // @EventListener(ApplicationReadyEvent.class)
     @RequestMapping(value = "/getMagazynier", method = RequestMethod.GET)
-    public String viewMagazynierzy(@ModelAttribute("magaziu") Magazynierzy ma, BindingResult result, ModelMap model) {
-        if (result.hasErrors()) {
+    public Magazynierzy viewMagazynierzy(@ModelAttribute("magaziu") Magazynierzy ma, BindingResult result, ModelMap model) {
+       /* if (result.hasErrors()) {
             return "błąd";
-        }
+        }*/
         magMap.put(ma.getMag_id(), ma);
         model.addAttribute("mag_nr", ma.getMag_nr());
-        return model.addAttribute("mag_nazwisko", ma.getMag_nazwisko()).toString();
+     return  new Magazynierzy(ma.getMag_nazwisko(),ma.getMag_nr());
+        // return   model.addAttribute("mag_nazwisko", ma.getMag_nazwisko()).toString();
+       // return "redirect:/getMagazynier";
 // return  "działa";
     }
 
