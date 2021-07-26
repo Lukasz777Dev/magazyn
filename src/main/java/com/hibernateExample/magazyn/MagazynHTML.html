@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--<%@taglib prefix="form" uri="http://www.springframework.org/tags/form" %>-->
+<%@ taglib prefix=“form” uri=“http://www.springframework.org/tags/form”%>
+<html lang="en" xmlns:form="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<br>
+
+<form action="/getMagazynier" method="GET" modelAttribute="magaziu" style="color:blue">
+    <table border=2>
+          <tr>
+            <td>nazwisko</td>
+            <td>
+                <input type="text" path="mag_nazwisko" width="300px"/>
+            </td>
+        </tr>
+        <tr>
+            <td>numer</td>
+            <td>
+                <input type="text" path="mag_nr" width="300"/>
+            </td>
+        </tr>
+    </table>
+    <input type="submit" value="zapisz"/>
+
+
+    <!-- <p>Nazwisko magazyniera <input type="text" name="magazynierzy_nazwisko" style="color:green"/></p>
+     <p>Nr magazyniera <input type="text" name="magazynierzy_nr"/></p>
+     <p><input type="submit" value="Submit" style="background:yellow"/> <input type="reset" value="Reset"/></p>
+     <p>Uwagi:
+         &lt;!&ndash; <iframe th:action="mag" style="dotted" frameborder="color:blue"/>&ndash;&gt;
+         &lt;!&ndash;<style> td { border: 2px solid black; } </style>&ndash;&gt;
+     </p>-->
+
+    <!-- <a href="/getMagazynier">
+         <button type="button" class="btn btn-primary">Wyświetl magazynierów</button>
+     </a>-->
+
+</form>
+</body>
+</html>
