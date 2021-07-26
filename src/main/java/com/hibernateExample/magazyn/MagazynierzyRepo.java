@@ -9,7 +9,7 @@ import java.util.List;
 
 
 @Repository
-      public interface MagazynierzyRepo extends CrudRepository<Magazynierzy, Integer> {
+       public interface MagazynierzyRepo extends CrudRepository<Magazynierzy, Integer> {
 
    /* @Override
     Iterable<Magazynierzy> findAll();*/

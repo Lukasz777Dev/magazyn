@@ -38,7 +38,7 @@ public class Magazynierzy {
         this.mag_nr = mag_nr;
     }
 
-         public Integer getMag_id() {
+          public Integer getMag_id() {
         return mag_id;
     }
 
