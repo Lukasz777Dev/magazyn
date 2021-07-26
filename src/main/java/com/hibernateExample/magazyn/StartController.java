@@ -24,9 +24,9 @@ import java.util.Map;
 @RequestMapping(value = "formularzMagaz")
 public class StartController {
 
-       private List<Magazynierzy> listOfMagazynierzy;
+          private List<Magazynierzy> listOfMagazynierzy;
 
-       public StartController() {
+          public StartController() {
         //  takeMagazynierzy();
         // listOfMagazynierzy = new ArrayList<>();
         // listOfMagazynierzy.add(new Magazynierzy("magazynierPrzykładowy", "00099"));
